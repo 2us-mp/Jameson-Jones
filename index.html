@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7568497532018335"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .button.contact {
-            background-color: #28a745;
-        }
-        .button.contact:hover {
-            background-color: #218838;
-        }
-        .button.watch {
-            background-color: #007bff;
-        }
-        .button.watch:hover {
-            background-color: #0056b3;
-        }
-        .button.description {
-            background-color: #ffc107;
-            color: #333;
-        }
-        .button.description:hover {
-            background-color: #e0a800;
-        }
-        .description {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 600px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fff;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <title>2.Movie Production</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .contact {
+      background-color: #28a745;
+    }
+    .watch {
+      background-color: #007bff;
+    }
+    .description {
+      background-color: #ffc107;
+      color: black;
+    }
+    .box {
+      margin-top: 30px;
+      display: none;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .box a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to 2.Movie Production</h1>
-    <p>Your premier source for amazing movie content!</p>
+  <h1>Welcome to 2.Movie Production</h1>
+  <p>Your premier source for amazing movie content!</p>
 
-    <a href="sms:+14504855134" class="button contact">Contact Us</a>
-    <a href="https://youtube.com/@2.movieproduction?si=Vc8BJBq3qLHfud8P" target="_blank" class="button watch">Watch Our Movies</a>
-    <button class="button description" onclick="showDescription()">Description</button>
+  <a class="button contact" href="sms:+14504855134">Contact Us</a>
+  <a class="button watch" href="https://watchfree.2movie-productions.com" target="_blank">Watch Our Movies</a>
+  <button class="button description" onclick="toggleBox()">Description</button>
 
-    <div id="description" class="description" style="display: none;">
-        <p>We are a movie company based in the United States, and we primarily upload our movies to YouTube and TikTok. You can watch our movies by visiting our <a href="https://youtube.com/@2.movieproduction?si=Vc8BJBq3qLHfud8P" target="_blank">YouTube Channel</a>.</p>
-    </div>
+  <div id="descBox" class="box">
+    <p>We are a movie company based in the United States, and we primarily upload our movies to YouTube and TikTok. You can watch our movies by visiting our <a href="https://youtube.com" target="_blank">YouTube Channel</a>.</p>
+  </div>
 
-    <script>
-        function showDescription() {
-            const description = document.getElementById('description');
-            if (description.style.display === 'none') {
-                description.style.display = 'block';
-            } else {
-                description.style.display = 'none';
-            }
-        }
-    </script>
+  <script>
+    function toggleBox() {
+      const box = document.getElementById("descBox");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
